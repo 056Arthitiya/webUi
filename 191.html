@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product example · Bootstrap v5.3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      /* แบนเนอร์ */
+      .banner {
+        position: relative;
+        width: 100%;
+        height: 400px;
+      }
+
+      .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px; /* ให้สูงเท่ากับแบนเนอร์ */
+      }
+
+      .carousel-caption {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        text-align: left;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังโปร่งใส */
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">MULTIMEDIA TECHNOLOGY</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">หลักสูตรสาขา</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">อาจารย์</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">กิจกรรม</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">สมัครเรียน</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ติดต่อ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner with Carousel -->
+    <section class="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEXv4%2BfiP3XLhpIISCBZeUA1qj1Jxww3gUh8dGiROpepy9cAMuLRPq%2FiFEI6HWb33kZ7TfunHpgsIb1TPC2xj1T3wmNURhr7ImsLl64z08054D%2FB5U2rkWnBz54KU6TC3aPFpCf6VAk06lMoJNA1cTlIMRSLbz8I4LXIDrdf03L59JknnVQ0bQVcBWukWJ%2BeeCfeJ8p1ky%2Bowd7DiyDfj1RyKCaLGnaeLb3TnJsow2baSaAVUe27j%2BZgP4H2c2mXy7jjXaw2hV1Ut%2BC5A%2BJLfmr3UGRG8fIq%2BH%2BINJjxrlxVg1cT1B%2BKKL4%2Fp1cKHR4L28tYQI7hdp7yp8pFJWhEC%2BGjvvwZ3SkHL73c3Lpkz%2BPIa2S%2BvlAqUoC0F2tph5l%2F%2B3%2FIEcwWr5hAOzOrQcXRtHq0gZct48NRgMUoQhRFHOkAypoXjuF%2Baa5Z11sXE1LnzOQwUoVYZdnUYRxWHnYx0sAE%2B%2BhTnqtHQCp%2BnXf%2B7D98ve4LlEUEArCLA3GMxmwwg%2BpG0elspAglwdKo3T%2BONKjUFYMyo%2BLtRBwo0XVgvuAGRCNLxm0TgcMnU%2BZT9dP1y3nsljIILeeOXB7ZzoVSV9IAZL0kXjaffddjkqgokbmyHh%2BvnPlOM3mRAVsH&allow_caching=true&sz=w1358-h660" alt="First slide">
+            <div class="carousel-caption">
+              <h3>ยินดีต้อนรับสู่เว็บไซต์ MMT</h3>
+              <p>ค้นหาข้อมูลต่างๆ ที่เกี่ยวข้องกับสาขาและหลักสูตร</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/305847748_380987364237648_3707098371727472482_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=6wOuDC1ADFYQ7kNvgFMRQPh&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AlT6f0LQ8nn35M_3on3z01Y&oh=00_AYAxVXgvz2E9BcaskglVd8qGz69_W9AB_YCuCDYh0eOm_A&oe=67938F2D" alt="Second slide">
+            <div class="carousel-caption">
+              <h3>ร่วมเรียนรู้ไปกับเรา</h3>
+              <p>ข้อมูลที่ครบครันสำหรับการเรียนรู้สาขานี้</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEUkL1mHo2r%2FFnyy60oSyE%2BUQluCpGOgmU4Qd%2B3wgQKhHjaYu4dAQJnpXwF9lJqdKdRDV0KfatE3EvIJk5YmHPn3yqPNPgMmufnVcZ6%2FlFHQ4yo4PtNEmStVo0QsdaARoO%2F%2B4gzk7pckBSoXgqk%2Fij1EJmAo9rpy1OD%2FuXRA96X3SS7xNk3P%2BBeXiJP5F9edXaFin0sxaeU1npYtfqzOn1MMWxQl9CKcGO3LXFxOZC1L6a5Y9qKx858bnS9DZGemsvNl9sN0a%2FFxAkleTAJSOVMH09%2BzFt%2B3SUeM7ADmg4hbvQOAO3FVFHpcJ6Dx6nyukuXP2zRXMEZ1ZMHl1qyBdhOzTIyiYoGbWB8Uj4FPfDyIF0Lxpo1gQorQpNlJYNBsb%2FI781wArVSREq7QAwkwz%2FHtVItXp87BWXT0G%2FUPLdiffb4px34wXFJi%2FQeTWd9YWy6W5%2FIK8cfeZfUZ1JHSdjR9FPqdVclsy2Sv5uFod1EkffvngKMAfcRNGJzgWuslW4ZcFOuJP00iELBuD%2B7T3nmGfH5l0X2eEt0RpgehDVercuDfFCL3a1u78MuWnz2t%2Fg%2BfQ9Ev3x0QcU6C6YQzMNIJLDpwQn3jU7pHW3cCJ%2FjmElkUXDsbqkBGLA5%2Fejk%3D&allow_caching=true&sz=w1358-h660">
+            <div class="carousel-caption">
+              <h3>กิจกรรมพิเศษ</h3>
+              <p>กิจกรรมสำหรับนักศึกษาทุกคน</p>
+            </div>
+          </div>
+        </div>
+
+    <style>
+
+
+    /* ข้อความซ้อนบนรูปภาพ */
+    .text-overlay {
+        position: absolute;
+        top: 50%; /* ตำแหน่งแนวตั้ง */
+        left: 50%; /* ตำแหน่งแนวนอน */
+        transform: translate(-50%, -50%); /* จัดกึ่งกลางข้อความ */
+        color: white; /* สีข้อความ */
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
+        padding: 20px;
+        border-radius: 10px; /* ขอบมน */
+    }
+    
+    </style>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+        <!-- Main Section -->
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>สาขาวิชาเทคโนโลยีมัลติมีเดีย</h2>
+                    <p>สาขาเทคโนโลยีมัลติมีเดียเป็นหนึ่งในสาขาที่ตอบโจทย์ความต้องการของยุคดิจิทัลได้อย่างครบวงจร ที่นี่ เราพร้อมที่จะพาคุณไปสำรวจและเรียนรู้ในด้านต่าง ๆ เช่น การออกแบบกราฟิก การพัฒนาแอปพลิเคชัน การสร้างสื่อดิจิทัล และการผลิตเนื้อหาภาพและเสียง ที่จะเปิดโอกาสให้คุณสามารถสร้างสรรค์ผลงานที่มีคุณค่าและสามารถตอบสนองความต้องการของตลาดในอนาคต
+สาขาของเราไม่เพียงแค่เน้นการเรียนรู้ในห้องเรียน แต่ยังมีการฝึกฝนทักษะจากประสบการณ์จริงผ่านโปรเจกต์และกิจกรรมต่าง ๆ ที่จะช่วยให้คุณเตรียมพร้อมสำหรับการทำงานในอุตสาหกรรมที่เติบโตอย่างรวดเร็ว</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/305760667_380987360904315_728226893516151541_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Et1U0m3VHvsQ7kNvgGeVnyn&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=APJM0opL0J8IJDkqIIfzYWl&oh=00_AYA_vyIXu6MNlCCf1bJ-cCRmF81w10zb5DvR8J9sBWfvPg&oe=67939452" alt="People working" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <style>
+            /* ทำให้ภาพปรับขนาดได้ */
+            .responsive-image {
+                display: block; /* ป้องกัน margin อัตโนมัติ */
+                max-width: 50%; /* จำกัดความกว้างไม่เกิน container */
+                height: auto; /* รักษาอัตราส่วนภาพ */
+            }
+        
+            /* ปรับขนาด container */
+            .container {
+                max-width: 1000px; /* จำกัดความกว้างสูงสุด */
+                margin: 0 auto; /* จัดกึ่งกลาง */
+                padding: 15px;
+            }
+        </style>
+    
+        <!-- Features Section -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <span class="text-primary fs-1">🔧</span>
+                        </div>
+                        <div>
+                            <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+                            <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <span class="text-primary fs-1">⚙️</span>
+                        </div>
+                        <div>
+                            <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+                            <p>Quo totam dolorum at pariatur aut distinctio dolorem laudantium illo direna pasata redi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .team-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .team-section p {
+            color: #666;
+            margin: 10px 0 30px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            position: relative;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .team-member img {
+            width: 100%;
+            display: block;
+        }
+        .team-info {
+            padding: 15px;
+        }
+        .team-info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .team-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .team-member:hover .overlay {
+            opacity: 1;
+        }
+        .overlay a {
+            color: #fff;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .overlay a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<section class="team-section">
+    <h2>อาจารย์ประจำสาขา</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="https://sci.rmutsb.ac.th/wp-content/uploads/2024/02/1219113289-03-01_0.jpg" alt="Team Member 1">
+            <div class="team-info">
+                <h3>ผศ.ดร.สรชัย ชวรางกูร</h3>
+            </div>
+            <div class="overlay">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://sci.rmutsb.ac.th/wp-content/uploads/2024/02/LINE_ALBUM_%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C_%E0%B9%92%E0%B9%94%E0%B9%90%E0%B9%92%E0%B9%91%E0%B9%93_92.jpg" alt="Team Member 2">
+            <div class="team-info">
+                <h3>ผศ.ดร.ณพงศ์ วรรณพิรุณ</h3>
+            </div>
+            <div class="overlay">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://sci.rmutsb.ac.th/wp-content/uploads/2024/02/LINE_ALBUM_%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3%E0%B9%8C_%E0%B9%92%E0%B9%94%E0%B9%90%E0%B9%92%E0%B9%91%E0%B9%93_88.jpg" alt="Team Member 3">
+            <div class="team-info">
+                <h3>ผศ.อธิษฐ์ คู่เจริญถาวร</h3>
+            </div>
+            <div class="overlay">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://sci.rmutsb.ac.th/wp-content/uploads/2024/02/1219113289-04-01_0.jpg" alt="Team Member 4">
+            <div class="team-info">
+                <h3>ผช.ชัชฎา ชวรางกูร</h3>
+            </div>
+            <div class="overlay">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+        }
+        .services-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff5f0;
+        }
+        .services-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .services-section p {
+            color: #666;
+            margin: 10px 0 30px;
+        }
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-box {
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+        .service-icon img {
+            width: 200px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        .service-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .service-description {
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<section class="services-section">
+    <h2>กิจกรรม</h2>
+    <p>กิจกรรมสามารถดูเพิ่มเติมได้ที่แถบเมนู</p>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-icon"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/467904652_1117823017015905_574871964926416585_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5Mc5KccTa20Q7kNvgEEDD-f&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AixHidm2C_Y64gBqowY5c7m&oh=00_AYCY4cjNEPVTG6MlZWhlEBUqWm5coHu3Yj-eY71CkuQ4lw&oe=67939857" alt="Service 1"></div>
+            <div class="service-title">Lorem Ipsum</div>
+            <div class="service-description">
+                ได้รับรางวัล รองชนะเลิศอันดับหนึ่ง  ในการส่งผลงานภาพยนตร์สั้น 
+ปมหลอน ซ่อนวิญญาณ ตอน แฟลชไดรฟ์ เข้าประกวดในโครงการประกวดภาพยนตร์สั้น ประเภทภาพยนตร์สยองขวัญ "หลอนศาสตร์" เมื่อวันที่ 20 พฤศจิกายน 2567
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-icon"><img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/453739136_926969089235738_1369122911464267765_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YG66JgvAyZgQ7kNvgFOjSo1&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=Ar3_YVPBYakurPy2NOt_Oxv&oh=00_AYCZBPMNbqxUoIJiQBMrGEmiwlk-ukkm4h4IRiCS3OsY-g&oe=67939958" alt="Service 2"></div>
+            <div class="service-title">Sed ut perspici</div>
+            <div class="service-description">
+                สาขาวิชาเทคโนโลยีมัลติมีเดีย ศูนย์หันตรา เป็นตัวแทนมหาวิทยาลัยนำเสนอผลงาน
+อาจารย์และนักศึกษา ในงาน อว.แฟร์
+: SCI POWER FOR FUTURE THAILAND 2024
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-icon"><img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/471377879_1086148049969270_3752030870313670103_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=o87HyPkBpAYQ7kNvgHuFP0l&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=A05srLvWygLYihX82g8bqsK&oh=00_AYANiGvqLZ-iKC-URXD7I4b35-kqk8U3ibC5bar9p74vSQ&oe=6793B7F7" alt="Service 3"></div>
+            <div class="service-title">Magni Dolores</div>
+            <div class="service-description">
+                ได้นำเสนอผลงานของสาขาวิชา ใน Theme : Digital Heritage มรดกทางวัฒนธรรม สู่นวัตกรรมดิจิทัล ในงานยอยศยิ่งฟ้า อยุธยามรดกโลก ในบูทจัดแสดงของมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-icon"><img src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEUkL1mHo2r%2FFnyy60oSyE%2BUQluCpGOgmU4Qd%2B3wgQKhHjaYu4dAQJnpXwF9lJqdKdRDV0KfatE3EvIJk5YmHPn3yqPNPgMmufnVcZ6%2FlFHQ4yo4PtNEmStVo0QsdaARoO%2F%2B4gzk7pckBSoXgqk%2Fij1EJmAo9rpy1OD%2FuXRA96X3SS7xNk3P%2BBeXiJP5F9edXaFin0sxaeU1npYtfqzOn1MMWxQl9CKcGO3LXFxOZC1L6a5Y9qKx858bnS9DZGemsvNl9sN0a%2FFxAkleTAJSOVMH09%2BzFt%2B3SUeM7ADmg4hbvQOAO3FVFHpcJ6Dx6nyukuXP2zRXMEZ1ZMHl1qyBdhOzTIyiYoGbWB8Uj4FPfDyIF0Lxpo1gQorQpNlJYNBsb%2FI781wArVSREq7QAwkwz%2FHtVItXp87BWXT0G%2FUPLdiffb4px34wXFJi%2FQeTWd9YWy6W5%2FIK8cfeZfUZ1JHSdjR9FPqdVclsy2Sv5uFod1EkffvngKMAfcRNGJzgWuslW4ZcFOuJP00iELBuD%2B7T3nmGfH5l0X2eEt0RpgehDVercuDfFCL3a1u78MuWnz2t%2Fg%2BfQ9Ev3x0QcU6C6YQzMNIJLDpwQn3jU7pHW3cCJ%2FjmElkUXDsbqkBGLA5%2Fejk%3D&allow_caching=true&sz=w1358-h660" alt="Service 4"></div>
+            <div class="service-title">Nemo Enim</div>
+            <div class="service-description">
+               โครงการศึกษาดูงานของหลักสูตรคณะวิทยาศาสตร์และเทคโนโลยี สาขาวิชาเทคโนโลยีมัลติมีเดีย ณ องค์การพิพิธภัณฑ์วิทยาศาสตร์เเห่งชาติ(อพวช.)และศูนย์วิทยาศาสตร์เพื่อการศึกษารังสิต จังหวัดปทุมธานี
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+</html>
